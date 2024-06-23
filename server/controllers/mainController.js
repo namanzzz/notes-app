@@ -1,12 +1,17 @@
 /* Get 
 homepage */
+const locals = {
+    title: 'NodeJS Notes',
+    description: 'Free NodeJS Notes App'
+}
+
 
 exports.homepage = async (req,res)=>{
     
-        const locals = {
-            title: 'NodeJS Notes',
-            description: 'Free NodeJS Notes App'
-        }
+        // const locals = {
+        //     title: 'NodeJS Notes',
+        //     description: 'Free NodeJS Notes App'
+        // }
 
         res.render('index', locals);
         
@@ -18,9 +23,9 @@ exports.homepage = async (req,res)=>{
 about */
 
 exports.about = async (req,res)=>{
-    const locals = {
-        title: 'NodeJS Notes',
-        description: 'Free NodeJS Notes App'
-    }
+    // const locals = {
+    //     title: 'NodeJS Notes',
+    //     description: 'Free NodeJS Notes App'
+    // }
     res.render('about',locals);
 }
