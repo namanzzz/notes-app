@@ -8,12 +8,16 @@ const locals = {
 
 exports.homepage = async (req,res)=>{
     
-        // const locals = {
-        //     title: 'NodeJS Notes',
-        //     description: 'Free NodeJS Notes App'
-        // }
+        const locals = {
+            title: 'NodeJS Notes',
+            description: 'Free NodeJS Notes App'
+        }
 
-        res.render('index', locals);
+        res.render('index', 
+           { 
+            locals,
+            layout: '../views/layouts/front-page'
+        });
         
 
 }
