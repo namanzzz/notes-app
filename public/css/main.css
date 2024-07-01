@@ -3,7 +3,7 @@
 } */
 
 :root{
-    --background-color: #04dad3;
+    --background-color: #f8ff2b;
     --bs-primary-rgb: #12296c;
 }
 
@@ -66,6 +66,29 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+
+@media (min-width: 1200px){
+/* Home */
 .home{
-    
+    background: 
+        url('../img/human-1.svg') left bottom no-repeat,
+        url('../img/human-2.svg') right bottom no-repeat,
+        url('../img/noise-bg.png') left top repeat,
+        var(--background-color);
+
+}
+}
+
+.home-title::before{
+    content: url('../img/stars.svg');
+    position: absolute;
+    left: -50px;
+    top: -30px;
+}
+
+.home-title::after{
+    content: url('../img/stars.svg');
+    position: absolute;
+    right: -50px;
+    bottom: -30px;
 }
