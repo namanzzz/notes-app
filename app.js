@@ -1,7 +1,7 @@
 
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
-
+const connectDB = require('./server/config/db');
 // import express from 'express'
 // import expressLayouts from 'express-ejs-layouts'
 
@@ -13,6 +13,10 @@ const port = 5000 || process.env.PORT;
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+
+// Database connected
+connectDB();
+
 
 // static files
 app.use(express.static('public'));
